@@ -1,38 +1,130 @@
-.App {
+@import "~font-awesome/css/font-awesome.min.css";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.sidebar {
+  width: 200px;
+  background-color: #ffffff;
+  color: #000000;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  color:rgb(86, 89, 255);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  width: full;
+  border-bottom: 1px solid #ffeeee;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 5px;
+}
+
+button{
+  background-color: rgb(3, 52, 138);
+  color:#ffffff;
+  padding: 10px 24px;
+  border-radius: 6px;
+  border-width: 0px;
+  /* max-width:100px; */
+}
+
+.quick-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span{
+  font-size: small;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:12px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-modal{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+input{
+  padding:12px;
+}
+button:hover{
+  background-color: rgb(47, 47, 185);
+}
+h4{
+  margin:2px;
+}
+.progress-bar-container {
+  width: 300px;
+  background-color: #dddddd;
+  max-height: 10px;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.progress-bar {
+  width: 50%;
+  height: 10px;
+  border-radius: 20px;
+}
+.grid-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-item2 {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 5px;
 }
